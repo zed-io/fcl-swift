@@ -22,7 +22,7 @@ struct ContentView: View {
 
                 Picker("iFrame", selection: $viewModel.provider, content: {
                     Text("Dapper").tag(Provider.dapper)
-                    Text("Blocoto").tag(Provider.blocto)
+                    Text("Blocto").tag(Provider.blocto)
                 }).onChange(of: viewModel.provider, perform: { _ in
                     viewModel.changeWallet()
                 })
